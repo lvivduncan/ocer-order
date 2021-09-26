@@ -12,6 +12,9 @@ const length = buttons.length;
 // view block
 const orderDiv = document.querySelector('.CommentFormText textarea');
 
+// clear 
+const clear = document.querySelector('#order .clear');
+
 // basket
 const checkout = document.getElementById('checkout');
 
@@ -80,3 +83,8 @@ if(localStorage.getItem('order') !== null){
     orderDiv && (orderDiv.value = dataLocalStorage);
 }
 
+clear && clear.addEventListener('click', function(){
+
+    localStorage.clear();
+    orderDiv.value = '';
+});
