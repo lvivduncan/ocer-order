@@ -11,6 +11,7 @@ const length = buttons.length;
 
 // view block
 const orderDiv = document.querySelector('.CommentFormText textarea');
+orderDiv.setAttribute('disabled', 'disabled');
 
 // clear 
 const clear = document.querySelector('#order .clear');
